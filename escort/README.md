@@ -19,3 +19,5 @@ decorator
 
 ##on Mac
 brew install package_name
+#项目脑图
+http://naotu.baidu.com/file/da13089863fdf67d623d96f177945c6c?token=67f6b9956e6e4603

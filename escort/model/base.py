@@ -11,5 +11,5 @@ Base.query = db_session.query_property()
 
 
 def init_db():
-    from Model import Item
+    from model import order
     Base.metadata.create_all(bind=engine)

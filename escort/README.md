@@ -17,5 +17,5 @@ decorator
 
 #安装依赖
 
-#on Mac
+##on Mac
 brew install package_name

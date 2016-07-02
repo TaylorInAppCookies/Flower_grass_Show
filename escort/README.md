@@ -1,12 +1,19 @@
 # Flower_grass_Show
 #项目依赖
 Flask
+
 Flask-HttpAuth
+
 jinjia2
+
 SQLAlchemy
+
 Werkzeug
+
 alembic
-decorator  
+
+decorator
+
 
 #安装依赖
 

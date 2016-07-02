@@ -6,7 +6,7 @@ jinjia2
 SQLAlchemy
 Werkzeug
 alembic
-decorator
+decorator  
 
 #安装依赖
 

@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0ee7d43-81f1-4e26-b96a-7fe38c60c17c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/webResources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/escort/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Flower_grass_Show.py" afterPath="$PROJECT_DIR$/escort/escort.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/escort/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Flower_grass_Show.iml" afterPath="$PROJECT_DIR$/.idea/Flower_grass_Show.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/escort/README.md" afterPath="$PROJECT_DIR$/escort/README.md" />
     </list>
     <ignored path="Flower_grass_Show.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,6 +57,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Flower_grass_Show.py" />
+        <option value="$PROJECT_DIR$/escort/README.md" />
       </list>
     </option>
   </component>
@@ -156,7 +153,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/escort/escort.py" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
@@ -459,8 +456,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/escort/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="19" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+        <state relative-caret-position="234">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>

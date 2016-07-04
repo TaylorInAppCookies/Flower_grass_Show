@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0ee7d43-81f1-4e26-b96a-7fe38c60c17c" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/escort/template/create_order.html" afterPath="$PROJECT_DIR$/escort/view/templates/create_order.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/escort/view/templates/create_order.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/escort/template/create_order.html" afterPath="" />
       <change type="MOVED" beforePath="$PROJECT_DIR$/escort/template/result_create_order.html" afterPath="$PROJECT_DIR$/escort/view/templates/result_create_order.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/webResources.xml" afterPath="$PROJECT_DIR$/.idea/webResources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />

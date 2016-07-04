@@ -24,8 +24,10 @@ def make_a_order():
         title = request.form['title']
         describe = request.form['describe']
         money = request.form['money']
+        # 需要对时间相关的字段做处理
         send_time = request.form['send_time']
         paid_at = request.form['paid_at']
+        #
         location_x = request.form['location_x']
         location_y = request.form['location_y']
         progress = Order.Progeress_Enum.on
@@ -34,7 +36,7 @@ def make_a_order():
                       paid_at, location_x, location_y, progress)
         db_session.add(order)
         db_session.commit()
-        return render_template('result_create_order.html', result=True)
+        return render_template('result_create_order.html')
     if request.method == 'GET':
         return render_template('create_order.html')
 

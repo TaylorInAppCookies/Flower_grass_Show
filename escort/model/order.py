@@ -6,21 +6,20 @@ from sqlalchemy.orm import relationship
 from model.base import Base
 
 
-class Progeress_Enum():
-    on = 'on'
-    attemper = 'attemper'
-    run = 'run'
-    abandon = 'abandon'
-    deleted = 'deleted'
-    paid = 'paid'
-    arrive = 'arrive'
-    sign = 'sign'
-    complete = 'complete'
-    off = 'off'
-
-
 class Order(Base):
     __tablename__ = 'Order'
+
+    class Progeress_Enum():
+        on = 'on'
+        attemper = 'attemper'
+        run = 'run'
+        abandon = 'abandon'
+        deleted = 'deleted'
+        paid = 'paid'
+        arrive = 'arrive'
+        sign = 'sign'
+        complete = 'complete'
+        off = 'off'
 
     id = Column(Integer, primary_key=True)
     title = Column(String(140))

@@ -3,7 +3,7 @@ import datetime
 from flask import Flask, request, render_template
 from model.base import db_session
 
-from model.order import Order
+from model.order import Order, Progeress_Enum
 
 app = Flask(__name__)
 
@@ -33,7 +33,7 @@ def make_a_order():
         money = request.form['money']
         location_x = request.form['location_x']
         location_y = request.form['location_y']
-        progress = Order.Progeress_Enum.on
+        progress = Progeress_Enum.on
         # 简单的订单创建逻辑,没有考虑恶意刷单,用户验证情况
         order = Order(title=title, describe=describe, money=money,
                       create_at=datetime.datetime.now(),

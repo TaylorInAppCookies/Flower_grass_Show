@@ -28,7 +28,7 @@ def make_a_order():
         paid_at = request.form['paid_at']
         location_x = request.form['location_x']
         location_y = request.form['location_y']
-        progress = Order.progress_set['on']
+        progress = Order.Progeress_Enum.on
         # 简单的订单创建逻辑,没有考虑恶意刷单,用户验证情况
         order = Order(title, describe, money, send_time,
                       paid_at, location_x, location_y, progress)

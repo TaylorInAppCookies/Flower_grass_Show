@@ -7,7 +7,18 @@ from model.base import Base
 
 class Order(Base):
     __tablename__ = 'Order'
-    progress_set = {'on', 'off', 'completed'}
+
+    class Progeress_Enum():
+        on = 'on'
+        attemper = 'attemper'
+        run = 'run'
+        abandon = 'abandon'
+        deleted = 'deleted'
+        paid = 'paid'
+        arrive = 'arrive'
+        sign = 'sign'
+        complete = 'complete'
+        off = 'off'
 
     id = Column(Integer, primary_key=True)
     title = Column(String(140))
@@ -17,16 +28,12 @@ class Order(Base):
     paid_at = Column(DateTime)
     location_x = Column(Float)
     location_y = Column(Float)
-    progress = Column(Enum(progress_set, name='progress'))
-    is_complete = Column(Boolean)
-    is_paid = Column(Boolean)
-    is_abandon = Column(Boolean)
-    is_running = Column(Boolean)
-    is_deleted = Column(Boolean)
+    progress = Column('progress',
+                      Enum('on', 'attemper', 'run', 'abandon', 'deleted',
+                           'paid', 'arrive', 'sign', 'complete', 'off'))
 
     def __init__(self, title=None, describe=None, money=None, send_time=None,
-                 paid_at=None, location_x=None, location_y=None, is_complete=None,
-                 is_paid=None, is_abandon=None, is_running=None, is_deleted=None):
+                 paid_at=None, location_x=None, location_y=None, progress='off'):
         self.title = title
         self.describe = describe
         self.money = money
@@ -34,12 +41,4 @@ class Order(Base):
         self.paid_at = paid_at
         self.location_x = location_x
         self.location_y = location_y
-        self.is_complete = is_complete
-        self.is_paid = is_paid
-        self.is_abandon = is_abandon
-        self.is_running = is_running
-        self.is_deleted = is_deleted
-
-    def json(self):
-        pass
-        # TODO add return messages of Order using json
+        self.progress = progress

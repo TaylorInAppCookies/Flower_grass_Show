@@ -27,7 +27,9 @@ def check_signature():
     nonce = request['nonce']
     return wechat.check_signature(token, signature, timestamp, nonce)
 
+
 @app.route('/make_a_order', methods=['POST', 'GET'])
+@wechat.oauth
 def make_a_order():
     """"
     version:0.0.1

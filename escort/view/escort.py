@@ -4,7 +4,7 @@ from flask import Flask, request, render_template
 from model.base import db_session
 
 from model.order import Order
-
+import wechat
 
 app = Flask(__name__)
 
@@ -18,6 +18,14 @@ def pre():
 def hello_world():
     return 'Hello escort!'
 
+
+@app.route('/check_signature')
+def check_signature():
+    token = request['token']
+    signature = request['signature']
+    timestamp = request['timestamp']
+    nonce = request['nonce']
+    return wechat.check_signature(token, signature, timestamp, nonce)
 
 @app.route('/make_a_order', methods=['POST', 'GET'])
 def make_a_order():
